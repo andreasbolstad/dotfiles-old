@@ -1,6 +1,7 @@
 # dotfiles
 
 My personal setup.
+Using a bare git repo approach, based on this tutorial: https://www.atlassian.com/git/tutorials/dotfiles
 
 Run the following to clone the setup:
 ```
