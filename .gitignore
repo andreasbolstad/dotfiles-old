@@ -3,9 +3,17 @@
 
 # Except these files
 !.gitignore
-!.vimrc
+
+# startup
 !.rc.d/
 !.rc.d/*
+
+# config
+!.vimrc
 !.config/
 !.config/ranger/
 !.config/ranger/*
+
+# executables
+!bin/
+!bin/*

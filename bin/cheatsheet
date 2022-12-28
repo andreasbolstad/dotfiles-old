@@ -1,0 +1,3 @@
+#!/bin/sh
+
+qutebrowser "https://depau.github.io/sway-cheatsheet/"
