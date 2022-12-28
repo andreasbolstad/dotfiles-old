@@ -6,3 +6,6 @@
 !.vimrc
 !.rc.d/
 !.rc.d/*
+!.config/
+!.config/ranger/
+!.config/ranger/*
