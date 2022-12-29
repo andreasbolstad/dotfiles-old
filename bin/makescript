@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+fail () {
+    >&2 echo -e "\x1b[31m$1\x1b[0m"
+    exit 1
+}
+
+if [ "$1" == "" ]; then
+    fail "Usage: $0 <name>"
+fi
+
+BIN="$HOME/bin/$1"
+
+if test -f "$BIN"; then
+    fail "$BIN exists"
+fi
+
+echo -e "#!/bin/sh\n\n \"\$@\"\n" > $BIN
+${EDITOR:-vim} $BIN
+chmod +x $BIN
+echo "Script created: $BIN"
+
