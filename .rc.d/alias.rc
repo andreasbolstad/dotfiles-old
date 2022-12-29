@@ -1,5 +1,10 @@
-alias editalias="vim ${HOME}/.rc.d/alias.rc"
+alias editalias="${EDITOR} ${HOME}/.rc.d/alias.rc"
 alias la="ls -la"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias editsway="${EDITOR} ${HOME}/.config/sway/config"
+
+kiosk () {
+    brave-browser --kiosk --app="$1"
+}
 
