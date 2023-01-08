@@ -244,4 +244,7 @@ default_border pixel
 gaps inner 4
 gaps outer 2
 
+# Notification daemon
+exec mako
+
 include /etc/sway/config.d/*
