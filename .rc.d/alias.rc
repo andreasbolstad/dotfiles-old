@@ -1,8 +1,12 @@
+# Configuration
 alias editalias="${EDITOR} ${HOME}/.rc.d/alias.rc"
+alias editsway="${EDITOR} ${HOME}/.config/sway/config"
+
+# Unlabeled
 alias la="ls -la"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias editsway="${EDITOR} ${HOME}/.config/sway/config"
+alias ranger="ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd '$LASTDIR'"
+alias obsidian="flatpak run --env=OBISIDIAN_USE_WAYLAND=1 md.obsidian.Obsidian"
 
 kiosk () {
     brave-browser --kiosk --app="$1"
