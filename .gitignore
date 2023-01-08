@@ -4,12 +4,14 @@
 # Except these files
 !.gitignore
 
-# startup
+# RC
+!.vimrc
+!.bashrc
+!.zshrc
 !.rc.d/
 !.rc.d/*
 
 # config
-!.vimrc
 !.config/
 !.config/kitty/
 !.config/kitty/*
