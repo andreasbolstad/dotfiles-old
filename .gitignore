@@ -21,6 +21,8 @@
 !.config/sway/*
 !.config/waybar/
 !.config/waybar/*
+!.config/i3status-rust/
+!.config/i3status-rust/*
 
 # executables
 !bin/

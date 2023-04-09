@@ -1,0 +1,44 @@
+cons_format = "{icon}"
+
+[theme]
+theme = "gruvbox-dark"
+[theme.overrides]
+separator = " "
+
+[icons]
+icons = "awesome6"
+
+[[block]]
+block = "net"
+format = " $icon {$signal_strength $ssid$frequency|Wired connection} "
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "bluetooth"
+mac = "00:18:09:92:1B:BA"
+disconnected_format = "$icon -"
+format = " $icon "
+[[block.click]]
+button = "left"
+cmd = "blueberry"
+[block.battery_state]
+"0..20" = "critical"
+"21..70" = "warning"
+"71..100" = "good"
+
+[[block]]
+block = "battery"
+device = "BAT1"
+interval = 10
+format = "$icon $percentage $time"
+missing_format = ""
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%b %-d %R') "

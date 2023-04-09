@@ -44,7 +44,8 @@
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
     "tooltip-format-ethernet": "eth {ifname}",
     "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50
+    "max-length": 50,
+    "on-click": "nm-connection-editor"
   },
   "idle_inhibitor": {
     "format": "{icon}",
